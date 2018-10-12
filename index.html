@@ -1,133 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    
-    <title>Sue's Mobile Hairdressers</title>
-    
-    <!-- BOOTSTRAP v4: Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- ********************** EXTERNAL STYLES ********************** -->
-    
-    <!-- BOOTSTRAP v4 - DOCS PAGE: https://getbootstrap.com/docs/4.0/components/alerts/ -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    
-    
-    <!-- ********************** CUSTOM STYLES ********************** -->
-    
-    <!-- GLOBAL APP STYLES -->
-    <link rel="stylesheet" href="app-global-styles.css">
-    
-    
-    <!-- ********************** EXTERNAL SCRIPTS ********************** -->
-    
-    <!-- jQuery LIBRARY / TOOLSET -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <!-- Bootstrap CSS LIBRARY JAVASCRIPT SUPPORT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    
-    <!-- MAIN AngularJS FRAMEWORK -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-    
-    <!-- MAIN AngularJS FRAMEWORK PLUGIN - HANDLES APP MODULE ROUTING REQUESTS -->
-    <script src="https://code.angularjs.org/1.6.6/angular-route.min.js"></script>
-    
-    
-    <!-- ********************** CUSTOM SCRIPTS ********************** -->
-    
-    <!-- CUSTOM APP WIDE JAVASCRIPT CODE -->
-    <script src="app-global-scripts.js"></script>
-    
-    <!-- THIS IS THE AngularJS APP STARTUP CODE THAT WILL LINK EVERYTHING TOGETHER -->
-    <script src="scripts/angular-startup.js"></script>
-    
-    <!-- THESE WILL BE THE AngularJS MODULE / PAGE CONTROLLERS - ADD NEW ONES AT THE END, JUST BEFORE THE </head> TAG -->
-    <script src="scripts/modules/home/home-controller.js"></script>
-    <script src="scripts/modules/forum/forum-controller.js"></script> 
-    <script src="scripts/modules/profile/profile-controller.js"></script> 
-    <script src="scripts/modules/about/about-controller.js"></script> 
-  </head>
-
-  <!-- ng-app="APP_NAME" IS REQUIRED FOR THE AngularJS APP INSTANCE TO KNOW WHICH TAG TO TAKE OVER -->
-  <body ng-app="My-Forum" id="forum-body"  style="color:purple">
-    
-    <!-- ********************** APP MENU / HEADER ********************** -->
-    
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <!-- THIS <a>My Mobile Forum</a> IS THE APP TITLE AT THE TOP -->
-        <a class="navbar-brand" href="#!/home"></a>
-        
-        <!-- THIS <button> ONLY APPEARS TOP RIGHT WHEN THE WINDOW WIDTH IS SMALL ENOUGH TO BE CONSIDERED A MOBILE SCREEN -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myForumNavbar" aria-controls="myForumNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- THIS IS THE ACTUAL MENU STRUCTURE THAT THE USER SEES AND CAN CLICK ON TO NAVIGATE THE APP -->
-        <div class="collapse navbar-collapse" id="myForumNavbar"  style="color:purple">
-          
-          <div class="navbar-nav"  style="color:purple"style="color:purple">
-                      
-                                <div class="navbar-nav" >
-            
-            <!-- ********************** MENU ITEMS GO INSIDE HERE ********************** -->
-            
-            <a class="nav-item nav-link active" href="#!/home" data-toggle="collapse" data-target="#myForumNavbar" aria-controls="myForumNavbar"  style="color:purple">
-              Home
-            </a>
-            
-            <a class="nav-item nav-link" href="#!/forum" data-toggle="collapse" data-target="#myForumNavbar" aria-controls="myForumNavbar"  style="color:purple">
-              Gallery
-            </a>
-            
-            <a class="nav-item nav-link" href="#!/profile" data-toggle="collapse" data-target="#myForumNavbar" aria-controls="myForumNavbar"  style="color:purple">
-              Prices
-            </a>
-            
-            <!-- a class="nav-item nav-link" href="#!/about" data-toggle="collapse" data-target="#myForumNavbar" aria-controls="myForumNavbar"  style="color:purple">
-              About
-            </a -->
-            
-          </div>
-          
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<title>Sue's Mobile Hairdressers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="stylesheets/foundation.min.css">
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="stylesheets/app.css">
+<script src="javascripts/modernizr.foundation.js"></script>
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="row page_wrap">
+  <!-- page wrap -->
+  <div class="twelve columns">
+    <!-- page wrap -->
+    <div class="row">
+      <div class="nine columns header_nav">
+        <ul id="menu-header" class="nav-bar horizontal">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-flyout"> <a href="#">Products</a><a href="#" class="flyout-toggle"></a>
+            <ul class="flyout">
+              <li class="has-flyout"><a href="products-page.html">Products Page</a></li>
+              <li class="has-flyout"><a href="contact.html">Contact Page</a></li>
+            </ul>
+          </li>
+          <li ><a href="galleries.html">Gallery</a></li>
+        </ul>
+        <script>$('ul#menu-header').nav-bar();</script>
+      </div>
+      <div class="three columns header_logo"> <img src="images/logo.png" alt=""> </div>
+    </div>
+    <!-- END Header -->
+    <div class="show-for-large-up">
+      <div class="row">
+        <div class="twelve columns">
+          <div id="featured"><img src="images/demo11.png" alt=""> <img src="images/demo21.png" alt=""> <img src="images/demo31.png" alt=""></div>
         </div>
-        
-      </nav>
+      </div>
     </div>
-    
-    <!-- ********************** ANGULAR MODULES VIEWS / PAGES WILL LOAD INSIDE THIS DIV ********************** -->
-    
-    <div ng-view id="app-view">
-      THIS TEXT WILL BE REPLACED WITH AN ANGULAR PAGE
+    <div class="row">
+      <div class="twelve columns">
+        <div class="heading_dots">
+          <h1 class="heading_supersize" style="font-family:Georgia Body; color:purple"><span class="heading_center_bg">Welcome to Sue's Mobile Hairdressers!</span></h1>
+        </div>
+      </div>
     </div>
-    
-    <!-- ********************** APP FOOTER ********************** -->
-    
-    <div class="text-center">
-      <p>
-        Copyright Sue's Mobile Hairdressers &copy; 2018
-      </p>
+    <!-- end row -->
+    <div class="row">
+      <div class="three columns">
+        <h3>Styles</h3>
+        <p><span class="dropcap_green">1</span> We specialise in Afro hair and can work with you to ensure that you are satisfied with the service. Some of the styles we do are:- Crochet, Twist, Cornrows, Weave on, Pick and Drop, Short and Long Braids.</p>
+      </div>
+      <div class="three columns">
+        <h3>Accessories</h3>
+        <p><span class="dropcap_black">2</span> You can buy hair accessories from:- DUKELS CAMBRIDGE, 56 Regent Street, Cambridge. Tel:- 01223 328309</p>
+      </div>
+      <div class="three columns">
+        <h3>Services</h3>
+        <p><span class="dropcap_black">3</span> I do home services, in the comfort of your own home or any location of your choice as I can travel to all areas in Cambridge(within a reasonable distance from Cambridge City Centre), additional charge for travel outside Cambridge, depending on location.</p>
+      </div>
+      <div class="three columns">
+        <h3>About Me</h3>
+        <p><span class="dropcap_black">4</span> Hi all...my name is Sue, an experienced afro haidresser based in Cambridge. I have more than 5 years experience and exceptional reviews from customers. </p>
+      </div>
     </div>
-    
-  </body>
-
+    <!-- end row -->
+    <div class="row" style="padding-top: 20px">
+      <div class="four columns"> <img src="images/demo2_small1.png" alt="">
+        <h3>Weave On</h3>
+        <p><em>Curly Weave on.</em></p>
+      </div>
+      <div class="four columns"> <img src="images/demo1_small1.png" alt="">
+        <h3>Corn Row</h3>
+        <p><em>Ghana Corn Row.</em></p>
+      </div>
+      <div class="four columns"> <img src="images/demo3_small1.png" alt="">
+        <h3>Long Braid</h3>
+        <p><em>Long Braids.</em></p>
+      </div>
+    </div>
+    <!-- end row -->
+    <div class="row">
+      <div class="twelve columns">
+        <ul id="menu3" class="footer_menu horizontal">
+          <li ><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>$('ul#menu3').nav-bar();</script>
+  </div>
+</div>
+<!-- end page wrap) -->
+<!-- Included JS Files (Compressed) -->
+<script src="javascripts/foundation.min.js"></script>
+<!-- Initialize JS Plugins -->
+<script src="javascripts/app.js"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
